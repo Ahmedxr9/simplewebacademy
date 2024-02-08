@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-GL4TnYr0+5UaVVDMpDkFgW8P4CtzI8TZkBBZN38fV1aTTaHo+WpycKXMIIBIOMl3r+6b9L3kWUrf1/+xjX4B1g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-GL4TnYr0+5UaVVDMpDkFgW8P4CtzI8TZkBBZN38fV1aTTaHo+WpycKXMIIBIOMl3r+6b9L3kWUrf1/+xjX4B1g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+
+</head>
+<body>
+    <header>
+        <h1>Online Code Editor</h1>
+        <div class="social-icons">
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            <div class="w3-top">
+                <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+                  <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+                <a class="w3-bar-item w3-button w3-hover-black" href="E:\peaky[2]\peaky[1]\peaky\file\site\menu.html">Back</a>
+    
+                </div>
+        </div>
+          </div>
+    </header>
+    <div class="container">
+        <div class="editor-container">
+            <textarea id="code-editor" placeholder="Write your HTML and JS code here..."></textarea>
+            <button onclick="runCode()">Run Code</button>
+        </div>
+        <iframe id="result-frame" sandbox="allow-scripts allow-same-origin"></iframe>
+    </div>
+    <div class="options">
+        <div class="dark-mode-toggle">
+            <label for="dark-mode-checkbox">Dark Mode</label>
+            <input type="checkbox" id="dark-mode-checkbox" onclick="toggleDarkMode()">
+        </div>
+    </div>
+    <div class="stickers">
+        <img src="img/js.jpg" alt="JS Sticker 1" class="sticker">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

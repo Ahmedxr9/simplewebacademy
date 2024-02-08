@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JS Courses</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="img/icon8.png" type="image/x-icon">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="course/js.html" class="w3-bar-item w3-button w3-theme-l1">Lecture</a>
+    <a href="E:\peaky[2]\peaky[1]\peaky\Quiz4\Quiz\Quiz.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Exercise</a>
+    <a href="E:\peaky[2]\peaky[1]\peaky\comp\index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Compiler</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="file:///E:/peaky[2]/peaky[1]/peaky/file/site/course/js.html">Js Course</a>
+
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="E:\peaky[2]\peaky[1]\peaky\index.html">Home</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="file:///E:/peaky[2]/peaky[1]/peaky/file/site/course/js.html">Js Course</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="E:\peaky[2]\peaky[1]\peaky\Quiz4\Quiz\Quiz.html">Exercise</a>
+  <a href="E:\peaky[2]\peaky[1]\peaky\comp\index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Compiler</a>
+
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">javascript</h1>
+      <p>JavaScript is a powerful and versatile programming language that plays a crucial role in web development. As a high-level, interpreted language, JavaScript allows developers to create dynamic and interactive content on websites. Originally designed to run in web browsers, it has evolved into a versatile language that can be used for both client-side and server-side development.</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Key Features</h1>
+      <p><strong>1. Client-Side Interactivity:</strong> JavaScript enables the creation of dynamic and responsive user interfaces on the client side, allowing developers to build engaging web applications that respond to user actions in real-time.,<br>
+
+       <strong>2. Versatility:</strong> Versatility: JavaScript is not limited to just web development; it has found applications in various domains, including server-side development, mobile app development (via frameworks like React Native), and even in game development.<br>
+        
+       <strong>3. Object-Oriented: </strong>JavaScript follows an object-oriented paradigm, allowing developers to create modular and reusable code. This makes it an excellent choice for building large-scale applications.<br>
+        
+       <strong>4. Asynchronous Programming:</strong> With features like callbacks, promises, and async/await, JavaScript excels in handling asynchronous operations. This is particularly useful for tasks such as fetching data from a server without blocking the user interface.<br>
+        
+       <strong>5. Cross-Browser Compatibility:</strong> JavaScript is supported by all major web browsers, making it a reliable choice for creating web applications that work seamlessly across different platforms.</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Course Overview:</h1>
+      <p><strong>1. Variables, Data Types, and Operators,<br>
+        2. Control Flow and Loops<br>
+        3. Functions and Scopes<br>
+        4. Arrays and Objects<br>
+        5. DOM Manipulation (Document Object Model)<br>
+        6. Asynchronous JavaScript (Callbacks, Promises, Async/Await)<br>
+        7. Introduction to ES6+ Features<br>
+        8. Introduction to Node.js (Server-Side JavaScript)<br>
+        9. Debugging and Error Handling<br>
+        10. Best Practices and Code Optimization<br></strong></p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <!-- Pagination
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div>
+-->
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>"JavaScript is like a variant of the LISP programming language that Crockford would love if he had a time machine."<br>
+
+        — James Hague</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="#" target="_blank">Peaky Blinders Team</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

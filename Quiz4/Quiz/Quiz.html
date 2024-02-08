@@ -1,0 +1,425 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Quiz.css" />
+   <!-- Link for the font used for Quiz heading -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./Quiz.js"></script>
+    <title>Quiz</title>
+  </head>
+  <body>
+    <!-- Logo for the Quiz -->
+    <div class="nav">
+    </div>
+
+    <div>
+        <!-- Heading for the quiz -->
+      <h1 class="heading">Javascript Quiz</h1>
+      <p class="quiz">Take this Quiz to Test your Knowledge of Javascript</p>
+    </div>
+
+      <!-- Form For the Quiz-->
+      <form action="" class="form">
+        <!-- Question 1 -->
+        <div id="q1">
+          <h2 class="questions">Question 1:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            How to write an IF statement for executing some code if "i" is NOT
+            equal to 5?
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input type="radio" name="q1" id="opt-1" value="if (i!= 5)" />if (i!=
+          5) <br /><br />
+          <input type="radio" name="q1" id="opt-2" value="if i <> 5" />if i <> 5
+          <br /><br />
+          <input type="radio" name="q1" id="opt-3" value="if i =! 5 then" />if i
+          =! 5 then <br /><br />
+          <input type="radio" name="q1" id="opt-4" value="if (i <> 5)" />if (i
+          <> 5) <br /><br />
+        </div>
+
+        <!-- Question 2 -->
+        <div id="q2">
+          <h2 class="questions">Question 2:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            How do you create a function in JavaScript?
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input
+            type="radio"
+            name="q2"
+            id="opt-1"
+            value='function:myFunction()'
+          />function:myFunction() <br /><br />
+          <input
+            type="radio"
+            name="q2"
+            id="opt-2"
+            value="function myFunction()"
+          />function myFunction()<br /><br />
+          <input
+            type="radio"
+            name="q2"
+            id="opt-3"
+            value='function=myFunction()'
+          />function=myFunction()<br /><br />
+          <input
+            type="radio"
+            name="q2"
+            id="opt-4"
+            value='None'
+          />None <br /><br />
+        </div>
+        <!-- Question 3 -->
+        <div id="q3">
+          <h2 class="questions">Question 3:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            Which event occurs when the user clicks on an HTML element?
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input type="radio" name="q3" id="opt-1" value="onclick" />onclick
+          <br /><br />
+          <input
+            type="radio"
+            name="q3"
+            id="opt-2"
+            value="onmouseover"
+          />onmouseover <br /><br />
+          <input
+            type="radio"
+            name="q3"
+            id="opt-3"
+            value="onmouseclick"
+          />onmouseclick <br /><br />
+          <input type="radio" name="q3" id="opt-4" value="onchange" />onchange
+          <br /><br />
+        </div>
+        <!-- Question 4 -->
+        <div id="q4">
+          <h2 class="questions">Question 4:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+          How do you write "Hello World" in an alert box?
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input
+            type="radio"
+            name="q4"
+            id="opt-1"
+            value='alert("Hello World");'
+            />alert("Hello World");<br /><br />
+          <input
+            type="radio"
+            name="q4"
+            id="opt-2"
+            value='msgBox("Hello World");'
+            />msgBox("Hello World");<br /><br />
+          <input
+            type="radio"
+            name="q4"
+            id="opt-3"
+            value='alertBox("Hello World");'
+            />alertBox("Hello World");<br /><br />
+          <input
+            type="radio"
+            name="q4"
+            id="opt-4"
+            value='msg("Hello World");'
+            />msg("Hello World"); <br /><br />
+        </div>
+        <!-- Question 5 -->
+        <div id="q5">
+          <h2 class="questions">Question 5:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+          How do you find the number with the highest value of x and y?
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input
+            type="radio"
+            name="q5"
+            id="opt-1"
+            value="Math.max(x, y)"
+            />Math.max(x, y)<br /><br />
+          <input
+            type="radio"
+            name="q5"
+            id="opt-2"
+            value="Math.ceil(x, y)"
+            />Math.ceil(x, y)<br /><br />
+          <input 
+            type="radio" 
+            name="q5" 
+            id="opt-3" 
+            value="top(x, y)" 
+            />top(x,y)<br /><br />
+          <input 
+            type="radio" 
+            name="q5" 
+            id="opt-4" 
+            value="ceil(x, y)" 
+            />ceil(x,y)<br /><br />
+        </div>
+        <!-- Question 6 -->
+        <div id="q6">
+          <h2 class="questions">Question 6:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            Inside which HTML element do we put the JavaScript?
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input type="radio" name="q6" id="opt-1" value="<scripting>" /> &lt;scripting&gt; <br /><br />
+          <input type="radio" name="q6" id="opt-2" value="<javascript>" /> &lt;javascript&gt; <br /><br />
+          <input type="radio" name="q6" id="opt-3" value="<script>" /> &lt;script&gt; <br /><br />
+          <input type="radio" name="q6" id="opt-4" value="<js>" />&lt;js&gt; <br /><br />
+        </div>
+        <!-- Question 7 -->
+        <div id="q7">
+          <h2 class="questions">Question 7:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            What is the correct JavaScript syntax to change the content of the HTML element below?
+            <br>
+            &lt;p id="demo">This is a demonstration.&lt;/p&gt;
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input type="radio" name="q7" id="opt-1" value="document.getElementByName('p').innerHTML = 'Hello World!';" /> document.getElementByName("p").innerHTML = "Hello World!"; <br /><br />
+          <input type="radio" name="q7" id="opt-2" value="document.getElement('p').innerHTML = 'Hello World!'';" /> document.getElement("p").innerHTML = "Hello World!"; <br /><br />
+          <input type="radio" name="q7" id="opt-3" value="#demo.innerHTML = 'Hello World!';" />#demo.innerHTML = "Hello World!"; <br /><br />
+          <input type="radio" name="q7" id="opt-4" value="document.getElementById('demo').innerHTML = 'Hello World!';" />document.getElementById("demo").innerHTML = "Hello World!"; <br /><br />
+        </div>
+        <!-- Question 8 -->
+        <div id="q8">
+          <h2 class="questions">Question 8:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            Where is the correct place to insert a JavaScript?
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input type="radio" name="q8" id="opt-1" value="The <head> section" />The &lt;head&gt; section  <br /><br />
+          <input type="radio" name="q8" id="opt-2" value="Both the <head> section and the <body> section are correct" />Both the &lt;head&gt; section and the &lt;body&gt; section are correct <br /><br />
+          <input type="radio" name="q8" id="opt-3" value="The <body> section" />The &lt;body&gt; section <br /><br />
+        </div>
+        <!-- Question 9 -->
+        <div id="q9">
+          <h2 class="questions">Question 9:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            What is the correct syntax for referring to an external script called "xxx.js"?
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input type="radio" name="q9" id="opt-1" value="<script name='xxx.js'>" />&lt;script name="xxx.js"> <br /><br />
+          <input type="radio" name="q9" id="opt-2" value="<script src='xxx.js'>" />&lt;script src="xxx.js"> <br /><br />
+          <input type="radio" name="q9" id="opt-3" value="<script href='xxx.js'>" />&lt;script href="xxx.js"> <br /><br />
+        </div>
+        <!-- Question 10 -->
+        <div id="q10">
+          <h2 class="questions">Question 10:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            The external JavaScript file must contain the &lt;script> tag.
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input type="radio" name="q10" id="opt-1" value="False" /> False<br /><br />
+          <input type="radio" name="q10" id="opt-2" value="True" />True <br /><br />
+        </div>
+        <!-- Question 11 -->
+        <div id="q11">
+          <h2 class="questions">Question 11:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            How do you call a function named "myFunction"?
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input type="radio" name="q11" id="opt-1" value="call function myFunction()" />call function myFunction() <br /><br />
+          <input type="radio" name="q11" id="opt-2" value="call myFunction()" />call myFunction() <br /><br />
+          <input type="radio" name="q11" id="opt-3" value="myFunction()" />myFunction() <br /><br />
+        </div>
+        <!-- Question 12 -->
+        <div id="q12">
+          <h2 class="questions">Question 12:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            How to write an IF statement in JavaScript?
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input type="radio" name="q12" id="opt-1" value="if i = 5 then" />if i = 5 then <br /><br />
+          <input type="radio" name="q12" id="opt-2" value="if i = 5" />if i = 5 <br /><br />
+          <input type="radio" name="q12" id="opt-3" value="if (i == 5)" />if (i == 5) <br /><br />
+          <input type="radio" name="q12" id="opt-4" value="if i == 5 then" />if i == 5 then <br /><br />
+        </div>
+        <!-- Question 13 -->
+        <div id="q13">
+          <h2 class="questions">Question 13:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            How does a WHILE loop start?
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input type="radio" name="q13" id="opt-1" value="while i = 1 to 10" />while i = 1 to 10 <br /><br />
+          <input type="radio" name="q13" id="opt-2" value="while (i <= 10)" />while (i <= 10) <br /><br />
+          <input type="radio" name="q13" id="opt-3" value="while (i <= 10; i++)" />while (i <= 10; i++) <br /><br />
+        </div>
+        <!-- Question 14 -->
+        <div id="q14">
+          <h2 class="questions">Question 14:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            How does a FOR loop start?
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input type="radio" name="q14" id="opt-1" value="for i = 1 to 5" />for i = 1 to 5 <br /><br />
+          <input type="radio" name="q14" id="opt-2" value="for (i = 0; i <= 5; i++)" />for (i = 0; i <= 5; i++) <br /><br />
+          <input type="radio" name="q14" id="opt-3" value="for (i = 0; i <= 5)" />for (i = 0; i <= 5) <br /><br />
+          <input type="radio" name="q14" id="opt-4" value="for (i <= 5; i++)" />for (i <= 5; i++) <br /><br />
+        </div>
+        <!-- Question 15 -->
+        <div id="q15">
+          <h2 class="questions">Question 15:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            How can you add a comment in a JavaScript?
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input type="radio" name="q15" id="opt-1" value="'This is a comment" />'This is a comment <br /><br />
+          <input type="radio" name="q15" id="opt-2" value="//This is a comment" />//This is a comment <br /><br />
+          <input type="radio" name="q15" id="opt-3" value="&lt;!--This is a comment--&gt;" />&lt;!--This is a comment--&gt; <br /><br />
+        </div>
+        <!-- Question 16 -->
+        <div id="q16">
+          <h2 class="questions">Question 16:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            How to insert a comment that has more than one line?
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input type="radio" name="q16" id="opt-1" value="//This comment has more than one line//" />//This comment has more than one line// <br /><br />
+          <input type="radio" name="q16" id="opt-2" value="/*This comment has more than one line*/" />/*This comment has more than one line*/ <br /><br />
+          <input type="radio" name="q16" id="opt-3" value="<!--This comment has more than one line-->" />&lt;!--This comment has more than one line--&gt; <br /><br />
+        </div>
+        <!-- Question 17 -->
+        <div id="q17">
+          <h2 class="questions">Question 17:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            What is the correct way to write a JavaScript array?
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input type="radio" name="q17" id="opt-1" value="var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')" />var colors = 1 = ("red"), 2 = ("green"), 3 = ("blue") <br /><br />
+          <input type="radio" name="q17" id="opt-2" value="var colors = 'red', 'green', 'blue'" />var colors = "red", "green", "blue" <br /><br />
+          <input type="radio" name="q17" id="opt-3" value="var colors = (1:'red', 2:'green', 3:'blue')" />var colors = (1:"red", 2:"green", 3:"blue") <br /><br />
+          <input type="radio" name="q17" id="opt-4" value="var colors = ['red', 'green', 'blue']" />var colors = ["red", "green", "blue"] <br /><br />
+        </div>
+        <!-- Question 18 -->
+        <div id="q18">
+          <h2 class="questions">Question 18:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            How do you round the number 7.25, to the nearest integer?
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input type="radio" name="q18" id="opt-1" value="rnd(7.25)" />rnd(7.25) <br /><br />
+          <input type="radio" name="q18" id="opt-2" value="round(7.25)" />round(7.25) <br /><br />
+          <input type="radio" name="q18" id="opt-3" value="Math.rnd(7.25)" />Math.rnd(7.25) <br /><br />
+          <input type="radio" name="q18" id="opt-4" value="Math.round(7.25)" />Math.round(7.25) <br /><br />
+        </div>
+        <!-- Question 19 -->
+        <div id="q19">
+          <h2 class="questions">Question 19:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            What is the correct JavaScript syntax for opening a new window called "w2" ?
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input type="radio" name="q19" id="opt-1" value="w2 = window.open('http://www.PeakyBlinders.com');" />w2 = window.open("http://www.PeakyBlinders.com"); <br /><br />
+          <input type="radio" name="q19" id="opt-2" value="w2 = window.new('http://www.PeakyBlinders.com');" />w2 = window.new("http://www.PeakyBlinders.com"); <br /><br />
+        </div>
+        <!-- Question 20 -->
+        <div id="q20">
+          <h2 class="questions">Question 20:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            JavaScript is the same as Java.
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input type="radio" name="q20" id="opt-1" value="False" />False <br /><br />
+          <input type="radio" name="q20" id="opt-2" value="True" />True <br /><br />
+        </div>
+        <!-- Question 21 -->
+        <div id="q21">
+          <h2 class="questions">Question 21:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            How can you detect the client's browser name?
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input type="radio" name="q21" id="opt-1" value="navigator.appName" />navigator.appName <br /><br />
+          <input type="radio" name="q21" id="opt-2" value="client.navName" />client.navName <br /><br />
+          <input type="radio" name="q21" id="opt-3" value="browser.name" />browser.name <br /><br />
+        </div>
+        <!-- Question 22 -->
+        <div id="q22">
+          <h2 class="questions">Question 22:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            How do you declare a JavaScript variable?
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input type="radio" name="q22" id="opt-1" value="v carName;" />v carName; <br /><br />
+          <input type="radio" name="q22" id="opt-2" value="var carName;" />var carName; <br /><br />
+          <input type="radio" name="q22" id="opt-3" value="variable carName;" />variable carName; <br /><br />
+        </div>
+        <!-- Question 23 -->
+        <div id="q23">
+          <h2 class="questions">Question 23:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            Which operator is used to assign a value to a variable?
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input type="radio" name="q23" id="opt-1" value="=" />= <br /><br />
+          <input type="radio" name="q23" id="opt-2" value="*" />* <br /><br />
+          <input type="radio" name="q23" id="opt-3" value="-" />- <br /><br />
+          <input type="radio" name="q23" id="opt-4" value="X" />X <br /><br />
+        </div>
+        <!-- Question 24 -->
+        <div id="q24">
+          <h2 class="questions">Question 24:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            What will the following code return: Boolean(10 > 9)
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input type="radio" name="q24" id="opt-1" value="false" />false <br /><br />
+          <input type="radio" name="q24" id="opt-2" value="true" />true <br /><br />
+          <input type="radio" name="q24" id="opt-3" value="NaN" />NaN <br /><br />
+        </div>
+        <!-- Question 25 -->
+        <div id="q25">
+          <h2 class="questions">Question 25:</h2>
+          <!-- Statement of the question -->
+          <h3 class="statement">
+            Is JavaScript case-sensitive?
+          </h3>
+          <!-- Radio buttons for the question -->
+          <input type="radio" name="q25" id="opt-1" value="No" />No <br /><br />
+          <input type="radio" name="q25" id="opt-2" value="Yes" />Yes <br /><br />
+        </div>
+      </form>
+
+        <!-- Submit Button -->
+            <input type="button" value="submit" class="submit" id="Button" onclick="check()" />
+            <br /><br /><br /><br />
+            
+  </body>
+</html>
+
+

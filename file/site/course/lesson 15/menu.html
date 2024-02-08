@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JS Courses</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="img/icon8.png" type="image/x-icon">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="E:\peaky[2]\peaky[1]\peaky\index.html" class="w3-bar-item w3-button w3-theme-l1">Home</a>
+    <a href="file:///E:/peaky[2]/peaky[1]/peaky/file/site/course/js.html" class="w3-bar-item w3-button w3-theme-l1">Lecture</a>
+    <a href="E:\peaky[2]\peaky[1]\peaky\Quiz4\Quiz\Quiz.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Exercise</a>
+    <a href="E:\peaky[2]\peaky[1]\peaky\comp\index.html " class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Compiler </a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="E:\peaky[2]\peaky[1]\peaky\file\site\menu.html">Back</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a href="file:///E:/peaky[2]/peaky[1]/peaky/file/site/course/js.html" class="w3-bar-item w3-button w3-theme-l1">Lecture</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="E:\peaky[2]\peaky[1]\peaky\Quiz4\Quiz\Quiz.html">Exercise</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Lesson 15: Testing and Debugging</h1>
+      <p>Importance of Testing
+
+        --Understanding the significance of testing in JavaScript development.
+        Types of testing (unit testing, integration testing).
+        Debugging in JavaScript
+        
+        --Overview of debugging tools in browsers.
+        Utilizing the console for debugging.
+        Breakpoints
+        </p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Introduction to breakpoints and their role in debugging.</h1>
+      <p>Pausing code execution for inspection.
+        Writing Testable Code
+        
+        --Best practices for writing testable and debuggable code.
+        Common patterns for reducing bugs.
+        </p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Questions</h1>
+      <p>Why is testing important in JavaScript development?
+
+        Describe different types of testing, including unit testing and integration testing.
+        
+        How do you use the console for debugging JavaScript code?
+        
+        What are breakpoints, and how can they help in debugging?
+        
+        Write a program with intentional bugs and demonstrate the debugging process.
+        
+        </p>
+    </div>
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Explanations</h1>
+        <p>Lesson 15: Testing and Debugging
+
+          --Importance of Testing:
+          Testing is the quality check for your code, ensuring it behaves as expected and catching potential issues before they reach users. This lesson emphasizes the importance of testing, highlighting its role in maintaining code reliability. It's like rehearsing a performance to identify and address any potential hiccups.
+          
+          --Debugging in JavaScript:
+          Debugging is the detective work of programming, helping you identify and fix issues in your code. This lesson introduces debugging tools available in browsers and demonstrates how to use them effectively. It's like having a magnifying glass to scrutinize each line of code for clues.
+          
+          --Breakpoints:
+          Breakpoints allow you to pause your code's execution at specific points, giving you time to inspect variables and step through the code. This lesson explores the concept of breakpoints and their role in debugging. It's like having a remote control to pause and analyze a live broadcast.
+          
+          --Writing Testable Code:
+          Writing testable code involves adopting practices that facilitate efficient testing. This lesson provides insights into writing modular and testable code, making the testing process smoother. It's like composing a script with clear cues and scenes, making it easy to rehearse and fine-tune.
+          </p>
+      </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <!-- Pagination
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div>
+-->
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Footer</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="#" target="_blank">Peaky Blinders Team</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

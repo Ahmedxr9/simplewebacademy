@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JS Courses</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="img/icon8.png" type="image/x-icon">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="E:\peaky[2]\peaky[1]\peaky\index.html" class="w3-bar-item w3-button w3-theme-l1">Home</a>
+    <a href="file:///E:/peaky[2]/peaky[1]/peaky/file/site/course/js.html" class="w3-bar-item w3-button w3-theme-l1">Lecture</a>
+    <a href="E:\peaky[2]\peaky[1]\peaky\Quiz4\Quiz\Quiz.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Exercise</a>
+    <a href="E:\peaky[2]\peaky[1]\peaky\comp\index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Compiler </a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="E:\peaky[2]\peaky[1]\peaky\file\site\menu.html">Back</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a href="file:///E:/peaky[2]/peaky[1]/peaky/file/site/course/js.html" class="w3-bar-item w3-button w3-theme-l1">Lecture</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="E:\peaky[2]\peaky[1]\peaky\Quiz4\Quiz\Quiz.html">Exercise</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Lesson 14: AJAX and Fetch API</h1>
+      <p>Understanding AJAX
+
+        --Definition of AJAX and its role in web development.
+        Benefits of asynchronous data retrieval.
+        Introduction to Fetch API
+        
+        --Overview of the Fetch API for making HTTP requests.
+        Syntax for fetching data from a server.
+        Handling Responses
+        </p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Processing and handling responses from API requests.</h1>
+      <p>JSON parsing and error handling.
+        CORS (Cross-Origin Resource Sharing)
+        
+        --Explanation of CORS and its implications.
+        Ways to handle CORS issues.
+        </p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Questions</h1>
+      <p>What is AJAX, and how does it enhance web development?
+
+        Explain the Fetch API and its role in making asynchronous HTTP requests.
+        
+        How do you handle responses from API requests using the Fetch API?
+        
+        Discuss the concept of CORS and its implications.
+        
+        Write a program that fetches data from an external API and displays it on a webpage.
+        </p>
+    </div>
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Explanations</h1>
+        <p>Lesson 14: Web APIs
+
+          --Understanding APIs:
+          APIs (Application Programming Interfaces) are like communication channels between different software systems. This lesson provides an understanding of APIs, explaining how they enable applications to interact with each other. It's like having a universal translator that facilitates communication between diverse entities.
+          
+          --RESTful APIs:
+          REST (Representational State Transfer) is an architectural style for designing networked applications. This lesson introduces RESTful APIs, explaining their principles and how they simplify communication between clients and servers. It's like following a set of guidelines to ensure a smooth conversation between two parties.
+          
+          --Making API Requests with JavaScript:
+          JavaScript enables you to make requests to external APIs, fetching data and integrating it into your web application. This lesson covers the basics of making API requests using tools like the Fetch API. It's like sending a letter to a pen pal and eagerly waiting for a response to enhance your understanding of the world.
+          
+          --Handling API Responses:
+          API responses often come in the form of JSON (JavaScript Object Notation). This lesson guides you through handling and parsing JSON responses, transforming them into usable data in your application. It's like unwrapping a gift and exploring its contents to find valuable treasures.          
+          </p>
+      </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <!-- Pagination
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div>
+-->
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Footer</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="#" target="_blank">Peaky Blinders Team</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
